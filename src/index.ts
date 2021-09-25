@@ -1,7 +1,7 @@
 import  express, {Application}  from "express";
 
 import indexRoutes from './routes/indexRoutes';
-import movieRoutes from './routes/movieRoutes';
+import movieRoutes from './routes/moviesRoutes';
 
 class Server{
 
@@ -18,7 +18,8 @@ class Server{
   }
 
   routes(): void {
-
+    this.app.use('/', indexRoutes);
+    this.app.use( '/api/movies',movieRoutes);
   }
 
   start(): void {
