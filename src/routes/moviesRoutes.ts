@@ -12,7 +12,11 @@ class MoviesRoutes {
     }
 
     config(): void {
-        this.router.get('/', moviesController.index);
+        this.router.get('/', moviesController.list);
+        this.router.get('/:id', moviesController.getOne);
+        this.router.post('/', moviesController.create);
+        this.router.put('/:id', moviesController.upate);
+        this.router.delete('/:id', moviesController.delete);
     }
 
 }
