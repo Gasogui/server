@@ -1,5 +1,7 @@
 /*  --- indexRoutes.ts ---  */
-import { Router } from "express";
+import { Router } from 'express';
+
+import { indexController } from '../controllers/indexController';
 
 class IndexRoutes {
 
@@ -7,11 +9,10 @@ class IndexRoutes {
 
     constructor() {
         this.config();
-
     }
 
     config(): void {
-        this.router.get('/', (req, res) => res.send('Págiana principal'));
+        this.router.get('/', indexController.index);
     }
 
 }

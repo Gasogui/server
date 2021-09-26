@@ -1,5 +1,6 @@
 /*  --- moviesRoutes.ts ---  */
 import { Router } from "express";
+import moviesController from "../controllers/moviesController";
 
 class MoviesRoutes {
 
@@ -11,7 +12,7 @@ class MoviesRoutes {
     }
 
     config(): void {
-        this.router.get('/', (req, res) => res.send('Movies List'));
+        this.router.get('/', moviesController.index);
     }
 
 }
