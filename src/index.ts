@@ -9,6 +9,7 @@ import actorRoutes from "./routes/actorRoutes";
 import directorRoutes from "./routes/directorRoutes";
 import genresRoutes from "./routes/genresRoutes";
 import ratingRoutes from "./routes/ratingRoutes";
+import reviewerRoutes from "./routes/reviewerRoutes";
 
 class Server {
 
@@ -36,6 +37,7 @@ class Server {
         this.app.use('/api/directores', directorRoutes);
         this.app.use('/api/genders', genresRoutes);
         this.app.use('/api/ratings', ratingRoutes);
+        this.app.use('/api/reviewers', reviewerRoutes);
     }
 
     start(): void {
