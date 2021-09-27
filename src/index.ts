@@ -12,6 +12,7 @@ import ratingRoutes from "./routes/ratingRoutes";
 import reviewerRoutes from "./routes/reviewerRoutes";
 import movieCastRoutes from "./routes/movieCastRoutes";
 import movieDirectionRoutes from "./routes/movieDirectionRoutes";
+import movieGenresRoutes from "./routes/movieGenresRoutes";
 
 class Server {
 
@@ -42,6 +43,7 @@ class Server {
         this.app.use('/api/reviewers', reviewerRoutes);
         this.app.use('/api/movies_cast', movieCastRoutes);
         this.app.use('/api/movies_dir', movieDirectionRoutes);
+        this.app.use('/api/movies_gen', movieGenresRoutes);
     }
 
     start(): void {
