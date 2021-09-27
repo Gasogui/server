@@ -1,12 +1,12 @@
-/* ---  actorController.ts ----  */
+/* ---  generesController.ts ----  */
 import { Request, Response } from "express";
 import pool from "../config/database";
 
 class GenresController {
 
     public async list(req: Request, res: Response) {
-        const actoresList = await pool.query('SELECT * FROM genres');
-        res.json(actoresList);
+        const genderList = await pool.query('SELECT * FROM genres');
+        res.json(genderList);
     }
 
     public async getOne(req: Request, res: Response): Promise<any> {
