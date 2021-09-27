@@ -4,12 +4,13 @@ import morgan from 'morgan';
 import cors from 'cors';
 
 import indexRoutes from './routes/indexRoutes';
-import moviesRoutes from './routes/moviesRoutes';
+import movieRoutes from './routes/movieRoutes';
 import actorRoutes from "./routes/actorRoutes";
 import directorRoutes from "./routes/directorRoutes";
 import genresRoutes from "./routes/genresRoutes";
 import ratingRoutes from "./routes/ratingRoutes";
 import reviewerRoutes from "./routes/reviewerRoutes";
+import movieCastRoutes from "./routes/movieCastRoutes";
 
 class Server {
 
@@ -32,12 +33,13 @@ class Server {
 
     routes(): void {
         this.app.use('/', indexRoutes);
-        this.app.use('/api/movies', moviesRoutes);
+        this.app.use('/api/movies', movieRoutes);
         this.app.use('/api/actores', actorRoutes);
         this.app.use('/api/directores', directorRoutes);
-        this.app.use('/api/genders', genresRoutes);
+        this.app.use('/api/genres', genresRoutes);
         this.app.use('/api/ratings', ratingRoutes);
         this.app.use('/api/reviewers', reviewerRoutes);
+        this.app.use('/api/movie_cast', movieCastRoutes);
     }
 
     start(): void {
