@@ -1,4 +1,4 @@
-/* ---  moviesController.ts ----  */
+/* ---  movieController.ts ----  */
 import { Request, Response } from "express";
 import pool from "../config/database";
 
