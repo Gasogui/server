@@ -4,7 +4,8 @@ import morgan from 'morgan';
 import cors from 'cors';
 
 import indexRoutes from './routes/indexRoutes';
-import movieRoutes from './routes/moviesRoutes';
+import moviesRoutes from './routes/moviesRoutes';
+import actoresRoutes from "./routes/actorRoutes";
 
 class Server {
 
@@ -27,7 +28,8 @@ class Server {
 
     routes(): void {
         this.app.use('/', indexRoutes);
-        this.app.use('/api/movies', movieRoutes);
+        this.app.use('/api/movies', moviesRoutes);
+        this.app.use('/api/actores', actoresRoutes);
     }
 
     start(): void {
