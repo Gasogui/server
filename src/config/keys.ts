@@ -5,7 +5,7 @@ export default {
         host: 'localhost',
         user: 'root',
         password: 'gasogui1972',
+        port: 3306,
         database: 'movie',
-        /* port: 3306 */
     }
 }

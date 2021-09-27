@@ -15,7 +15,7 @@ class MoviesRoutes {
         this.router.get('/', moviesController.list);
         this.router.get('/:id', moviesController.getOne);
         this.router.post('/', moviesController.create);
-        this.router.put('/:id', moviesController.upate);
+        this.router.put('/:id', moviesController.update);
         this.router.delete('/:id', moviesController.delete);
     }
 

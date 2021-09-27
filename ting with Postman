@@ -1,0 +1,35 @@
+[33mcommit 031f4a58c7e324d5e181555fb2610069926477a2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Guillermo Garcia Soto <gasogui@gmail.com>
+Date:   Sun Sep 26 02:47:53 2021 -0500
+
+    Route testing with Postman
+
+[33mcommit b917c1ec743a968eb9967c412752ca08b4687d35[m
+Author: Guillermo Garcia Soto <gasogui@gmail.com>
+Date:   Sun Sep 26 01:08:48 2021 -0500
+
+    Controllers file configuration
+
+[33mcommit b0c910192c22eab8a3c3269aba84d0987713aab3[m
+Author: Guillermo Garcia Soto <gasogui@gmail.com>
+Date:   Sat Sep 25 23:31:04 2021 -0500
+
+    Configuration keys.ts and database.ts file
+
+[33mcommit 267bd4a38a487c9c68f7faf030601a50d4e2c29b[m
+Author: Guillermo Garcia Soto <gasogui@gmail.com>
+Date:   Sat Sep 25 20:46:15 2021 -0500
+
+    Full server configuration
+
+[33mcommit bf666b1d5c7e4b8047d52c960a7fded9aaffa7b5[m
+Author: Guillermo Garcia Soto <gasogui@gmail.com>
+Date:   Sat Sep 25 18:08:17 2021 -0500
+
+    Initial configuration, indexRoutes and moviesRouters
+
+[33mcommit 82d19a4ff75ea66235da35404ee56fc687876944[m
+Author: Guillermo Garcia Soto <gasogui@gmail.com>
+Date:   Sat Sep 25 17:28:39 2021 -0500
+
+    initial server configuration
